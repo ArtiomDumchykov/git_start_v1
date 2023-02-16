@@ -18,3 +18,7 @@ h6 {
     font-family: inherit;
     color: red;
 }
+
+section {
+    background-color: rgb(88, 255, 255);
+}
