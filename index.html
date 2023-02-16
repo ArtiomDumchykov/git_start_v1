@@ -59,10 +59,24 @@
                 l = log --oneline --graph --decorate --all
                 g = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'
             <hr>
+
+
+            git checkout -- index.html отменяет последние изменния в одном файле(если не добавили команду add) <hr>
+            git checkout . - отменяет все измения во всех файлах (если не добавили команду add) <hr>
             <div>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nostrum excepturi vel adipisci fuga sed accusamus ex cupiditate corporis repellat dolorum, unde quo consectetur, alias, libero praesentium magnam non! Facere.
 
             </div>
+            <div>
+                Если отменить уже stage который уже добавлен с помощю 
+                git add . чтобы от туда извлечь и отменить все изменния 
+                git checkout -- index.html уже не сработает
+                поэтому нам нужно использовать git reset index.html
+            </div>
+
+
+
+
         </section>
     </div>
 
